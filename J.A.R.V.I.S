@@ -25,13 +25,13 @@ def speak(audio):
 def greetMe():
     currentH = int(datetime.datetime.now().hour)
     if currentH >= 0 and currentH < 12:
-        speak('Good Morning Arnav boss')
+        speak('Good Morning boss')
 
     if currentH >= 12 and currentH < 18:
-        speak('Good Afternoon Arnav  boss')
+        speak('Good Afternoon boss')
 
     if currentH >= 18 and currentH !=0:
-        speak('Good Evening Arnav boss')
+        speak('Good Evening boss')
 
 greetMe()
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
             sys.exit()
             
         elif 'open code' in query:
-             codePath = "C:\\Users\\VinayKumar\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+             codePath = "Your vs code path"
              os.startfile(codePath) 
              
         elif 'the time' in query:
